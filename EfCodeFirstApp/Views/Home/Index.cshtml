@@ -1,0 +1,12 @@
+﻿@model IEnumerable<EfCodeFirstApp.Models.Car>
+@*@foreach (var item in Model)
+    {
+        <p>@item.Id | @item.Name | @item.CarModel.Name | @item.Price</p>
+    }*@
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<a asp-action="Index" asp-controller="Cars">Cars</a>
+<a asp-action="Index" asp-controller="CarModels">CarModels</a>
